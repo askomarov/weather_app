@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import SvgIcon from "@/components/SvgIcon.vue";
+
 interface Link {
   title?: string;
   href: string;
@@ -6,7 +8,7 @@ interface Link {
   iconWidth?: number;
   iconHeight?: number;
 }
-const links:Link[] = [
+const links: Link[] = [
   {
     title: "linkedin",
     href: "https://www.linkedin.com/in/askomarov/",
@@ -44,13 +46,7 @@ const links:Link[] = [
           class="main-link outline secondary"
           :class="link.title"
         >
-          <svg
-            v-if="link.icon"
-            :width="link.iconWidth || 24"
-            :height="link.iconHeight || 24"
-          >
-            <use :href="`../src/assets/sprite_auto.svg#${link.icon}`"></use>
-          </svg>
+          <SvgIcon v-if="link.icon" :name="link.icon" />
           <span v-show="link.title != 'upwork'">
             {{ link.title }}
           </span>
