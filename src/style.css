@@ -1,0 +1,75 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  --box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2)
+}
+*{
+  box-sizing: border-box;
+}
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 1rem;
+  background-color: var(--bg-main, #fff);
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--bg-btn, #fff);
+  cursor: pointer;
+  transition: border-color 0.25s;
+  outline: 0;
+}
+input{
+  border-radius: 8px;
+  border: 1px solid #444;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+}
+button:hover {
+  border-color: #646cff;
+}
+
+#my-app {
+  width: 320px;
+  min-height: 300px;
+  margin: 0 auto;
+  padding: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-btn: #5a5a5a;
+    --bg-main: #444;
+    --cards-bg:#6d6d6dcf;
+    --box-shadow: 0px 5px 10px 2px rgba(255, 255, 255, 0.2)
+  }
+}
