@@ -50,7 +50,9 @@ const dragEnd = () => {
   padding: 16px;
   position: relative;
   display: grid;
-  grid-template-rows: auto 2fr 1fr;
+  align-content: start;
+  align-items: start;
+  grid-template-rows: repeat(3, auto);
   gap: 16px;
 }
 .settings__title {
