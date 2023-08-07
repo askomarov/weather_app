@@ -49,8 +49,8 @@ const dragEnd = () => {
   height: 100%;
   padding: 16px;
   position: relative;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto 2fr 1fr;
   gap: 16px;
 }
 .settings__title {
@@ -70,7 +70,7 @@ header {
   align-items: start;
   gap: 8px;
 }
-.settings__empty-list{
+.settings__empty-list {
   flex: 1 1 auto;
   display: flex;
   align-items: center;

@@ -93,21 +93,22 @@ onBeforeMount(() => {
 }
 .header__title {
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 .header__settings-wrap {
   font-weight: 600;
   position: absolute;
-  background: #bbbbbb99;
+  background: rgb(219 219 219 / 96%);
   inset: 0;
-  backdrop-filter: blur(4px);
   border-radius: 20px;
+  overflow: hidden;
 }
 .cards {
   flex: 1 1 auto;
   padding: 16px;
   border-radius: 20px;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 16px;
   box-shadow: inset var(--box-shadow);
   background: var(--cards-bg, #fff);
@@ -116,5 +117,11 @@ onBeforeMount(() => {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &.hidden{
+    color: red;
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 </style>

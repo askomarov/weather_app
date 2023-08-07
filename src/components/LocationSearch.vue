@@ -16,7 +16,7 @@ const searchSubmit = ()=>{
     <h3 class="location-search__title">Add Location</h3>
     <div class="location-search__input-wrap">
       <input class="input" type="text" v-model="searchValue" required />
-      <button type="submit">Submit</button>
+      <button class="location-search__submit" type="submit">Submit</button>
     </div>
   </form>
 </template>
@@ -33,6 +33,9 @@ const searchSubmit = ()=>{
   align-items: center;
   align-items: center;
   gap: 8px;
+}
+.location-search__submit{
+  color: inherit;
 }
 .input {
   flex: 1 1 auto;
